@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sdi-gU-zEM">
-                                <rect key="frame" x="0.0" y="88" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gl-6w-ydu">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -28,9 +28,12 @@
                                         <state key="normal" title="Selected City">
                                             <color key="titleColor" red="0.23529411759999999" green="0.30588235289999999" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cityHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2od-Uy-IGd"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnJ-2X-GIz">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="50"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnJ-2X-GIz">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                         <color key="backgroundColor" red="0.48651541100000001" green="0.71987371580000004" blue="0.91529606669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="BXN-Sm-0gt"/>
@@ -39,9 +42,12 @@
                                         <state key="normal" title="San Francisco">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UpC-1g-nK8"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jG3-iT-rNm">
-                                        <rect key="frame" x="0.0" y="100" width="414" height="50"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jG3-iT-rNm">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                         <color key="backgroundColor" red="0.48651541100000001" green="0.71987371580000004" blue="0.91529606669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="3jn-Yf-7E6"/>
@@ -50,9 +56,12 @@
                                         <state key="normal" title="New York City">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Er-S5-A7t"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbk-Y8-A8W">
-                                        <rect key="frame" x="0.0" y="150" width="414" height="50"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbk-Y8-A8W">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                         <color key="backgroundColor" red="0.48651541100000001" green="0.71987371580000004" blue="0.91529606669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="3PY-ur-uel"/>
@@ -61,9 +70,12 @@
                                         <state key="normal" title="Los Angeles">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jew-oR-hMC"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzK-Al-tue">
-                                        <rect key="frame" x="0.0" y="200" width="414" height="50"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzK-Al-tue">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                         <color key="backgroundColor" red="0.48651541100000001" green="0.71987371580000004" blue="0.91529606669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Aui-Or-gcT"/>
@@ -72,9 +84,12 @@
                                         <state key="normal" title="Chicago">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rai-Vj-goO"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEr-WL-0pA">
-                                        <rect key="frame" x="0.0" y="250" width="414" height="50"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEr-WL-0pA">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                         <color key="backgroundColor" red="0.48651541100000001" green="0.71987371580000004" blue="0.91529606669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Pov-sd-WmU"/>
@@ -83,11 +98,14 @@
                                         <state key="normal" title="Dallas">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cityTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="daF-uj-OBg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Sdi-gU-zEM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4Ox-gG-y4g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sdi-gU-zEM" secondAttribute="trailing" id="4jP-oT-Cpv"/>
@@ -96,6 +114,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="tCo-b5-quU"/>
+                    <connections>
+                        <outletCollection property="ctiyButtons" destination="mnJ-2X-GIz" collectionClass="NSMutableArray" id="3US-7E-dYt"/>
+                        <outletCollection property="ctiyButtons" destination="jG3-iT-rNm" collectionClass="NSMutableArray" id="2Be-Qp-soe"/>
+                        <outletCollection property="ctiyButtons" destination="Tbk-Y8-A8W" collectionClass="NSMutableArray" id="gtR-4h-efR"/>
+                        <outletCollection property="ctiyButtons" destination="TzK-Al-tue" collectionClass="NSMutableArray" id="FBS-Zp-QBh"/>
+                        <outletCollection property="ctiyButtons" destination="xEr-WL-0pA" collectionClass="NSMutableArray" id="VcF-cM-E45"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,6 +134,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dNl-b7-d6V">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
